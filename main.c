@@ -123,17 +123,6 @@ void add_item(Kamus* kamus) {
     read_data(kamus);
 }
 
-void bubblesort(Kamus* kamus) {
-    int i, j;
-    for (i = 0; i < kamus->length - 1; i++) {
-        for (j = 0; j < kamus->length - 1; j++) {
-            if (kamus->data[i].word[0] < kamus->data[j + 1].word[0]) {
-                swapInt(&nilaiAkhir[j], &nilaiAkhir[j + 1]);
-                swapString(&name[j], &name[j + 1]);
-            }
-        }
-    }
-}
 
 Kamus initialize() {
     Kamus kamus;
